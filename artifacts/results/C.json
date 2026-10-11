@@ -1,0 +1,18 @@
+{
+  "candidate": "C: MiniLM + LR",
+  "macro_f1": 0.9293,
+  "ci95_low": 0.9195,
+  "ci95_high": 0.9375,
+  "worst_recalls": {
+    "pending_transfer": 0.692,
+    "balance_not_updated_after_bank_transfer": 0.725,
+    "declined_transfer": 0.725,
+    "compromised_card": 0.825,
+    "direct_debit_payment_not_recognised": 0.825
+  },
+  "p95_ms_cpu": 6.2,
+  "size_mb": 86.8,
+  "n_eval": 3076,
+  "eval_seconds": 9.4,
+  "test_fingerprint": "e62ee22558ec"
+}

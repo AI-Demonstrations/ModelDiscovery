@@ -1,0 +1,21 @@
+# Model-selection walkthrough: Python 3.10+
+#
+# 1) Install PyTorch FIRST, matched to your GPU.
+#    GTX 1080 Ti (Pascal, sm_61): 2.14 is the last release with wheels for it, CUDA 12.6 build only.
+#      pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cu126
+#    (The driver must support CUDA 12.6+; check the header of `nvidia-smi`.)
+#
+# 2) Then:  pip install -r requirements.txt
+#    Pins are lower bounds tested with transformers 5.19, huggingface_hub 1.33, datasets 5.1.
+transformers>=5.0
+huggingface_hub>=1.0
+datasets>=4.0
+sentence-transformers>=5.0
+accelerate>=1.0
+scikit-learn>=1.5
+scipy
+pandas
+matplotlib
+jupyterlab
+ipywidgets
+gradio>=5.0        # optional: only for the live web UI cell

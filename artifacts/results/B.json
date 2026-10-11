@@ -1,0 +1,18 @@
+{
+  "candidate": "B: Zero-shot NLI",
+  "macro_f1": 0.4478,
+  "ci95_low": 0.3799,
+  "ci95_high": 0.4682,
+  "worst_recalls": {
+    "apple_pay_or_google_pay": 0.0,
+    "atm_support": 0.0,
+    "card_arrival": 0.0,
+    "beneficiary_not_allowed": 0.0,
+    "card_delivery_estimate": 0.0
+  },
+  "p95_ms_cpu": 7461.2,
+  "size_mb": 1553.9,
+  "n_eval": 385,
+  "eval_seconds": 180.8,
+  "test_fingerprint": "subsample"
+}

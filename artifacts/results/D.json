@@ -1,0 +1,18 @@
+{
+  "candidate": "D: Fine-tuned DistilBERT",
+  "macro_f1": 0.8971,
+  "ci95_low": 0.8852,
+  "ci95_high": 0.9064,
+  "worst_recalls": {
+    "virtual_card_not_working": 0.4,
+    "why_verify_identity": 0.6,
+    "get_disposable_virtual_card": 0.675,
+    "balance_not_updated_after_bank_transfer": 0.7,
+    "declined_transfer": 0.725
+  },
+  "p95_ms_cpu": 11.7,
+  "size_mb": 255.6,
+  "n_eval": 3076,
+  "eval_seconds": 12.6,
+  "test_fingerprint": "e62ee22558ec"
+}

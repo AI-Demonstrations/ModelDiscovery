@@ -1,0 +1,12 @@
+# Large model artifacts (regenerable; too big for GitHub)
+artifacts/ft-runs/
+artifacts/distilbert-banking77/*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Python / env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env

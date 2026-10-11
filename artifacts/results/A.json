@@ -1,0 +1,18 @@
+{
+  "candidate": "A: TF-IDF + LR",
+  "macro_f1": 0.8864,
+  "ci95_low": 0.8741,
+  "ci95_high": 0.8961,
+  "worst_recalls": {
+    "pending_transfer": 0.718,
+    "topping_up_by_card": 0.725,
+    "virtual_card_not_working": 0.725,
+    "wrong_exchange_rate_for_cash_withdrawal": 0.725,
+    "card_payment_not_recognised": 0.75
+  },
+  "p95_ms_cpu": 0.6,
+  "size_mb": 13.6,
+  "n_eval": 3076,
+  "eval_seconds": 8.2,
+  "test_fingerprint": "e62ee22558ec"
+}
