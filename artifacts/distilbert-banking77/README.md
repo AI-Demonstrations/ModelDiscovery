@@ -23,7 +23,7 @@ Original license: CC-BY-4.0 (PolyAI).
 
 ## Evaluation (frozen test split, fingerprint e62ee22558ec)
 - Macro-F1: 0.897 (95% bootstrap CI 0.885-0.906)
-- p95 latency, single message on CPU: 12 ms
+- p95 latency, single message on CPU: 13 ms
 - Weakest intents by recall: virtual_card_not_working, why_verify_identity, get_disposable_virtual_card, balance_not_updated_after_bank_transfer, declined_transfer
 
 ## Decision record

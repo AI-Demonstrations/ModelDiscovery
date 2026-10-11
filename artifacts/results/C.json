@@ -10,9 +10,9 @@
     "compromised_card": 0.825,
     "direct_debit_payment_not_recognised": 0.825
   },
-  "p95_ms_cpu": 6.2,
+  "p95_ms_cpu": 7.3,
   "size_mb": 86.8,
   "n_eval": 3076,
-  "eval_seconds": 9.4,
+  "eval_seconds": 9.6,
   "test_fingerprint": "e62ee22558ec"
 }

@@ -10,9 +10,9 @@
     "wrong_exchange_rate_for_cash_withdrawal": 0.725,
     "card_payment_not_recognised": 0.75
   },
-  "p95_ms_cpu": 0.6,
+  "p95_ms_cpu": 0.8,
   "size_mb": 13.6,
   "n_eval": 3076,
-  "eval_seconds": 8.2,
+  "eval_seconds": 9.0,
   "test_fingerprint": "e62ee22558ec"
 }

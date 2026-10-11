@@ -10,9 +10,9 @@
     "balance_not_updated_after_bank_transfer": 0.7,
     "declined_transfer": 0.725
   },
-  "p95_ms_cpu": 11.7,
+  "p95_ms_cpu": 12.7,
   "size_mb": 255.6,
   "n_eval": 3076,
-  "eval_seconds": 12.6,
+  "eval_seconds": 12.9,
   "test_fingerprint": "e62ee22558ec"
 }
