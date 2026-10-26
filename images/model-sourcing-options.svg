@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" fill="#ffffff"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Four ways to get a model</text>
+  <text x="600" y="72" text-anchor="middle" font-size="15" fill="#475569">Every project starts by choosing one of these. Each step to the right costs more effort and gives more control.</text>
+
+  <!-- Card 1: API -->
+  <g>
+    <rect x="30" y="100" width="270" height="470" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <rect x="30" y="100" width="270" height="64" rx="14" fill="#2563eb"/>
+    <rect x="30" y="140" width="270" height="24" fill="#2563eb"/>
+    <text x="50" y="128" font-size="13" font-weight="700" fill="#dbeafe">OPTION 1</text>
+    <text x="50" y="152" font-size="19" font-weight="700" fill="#ffffff">Call a hosted API</text>
+    <text x="50" y="192" font-size="13" fill="#1e293b">Send inputs to a vendor's model</text>
+    <text x="50" y="210" font-size="13" fill="#1e293b">and get predictions back.</text>
+    <text x="50" y="242" font-size="13" font-weight="700" fill="#1e3a8a">Examples</text>
+    <text x="50" y="262" font-size="13" fill="#1e293b">• Google Gemini</text>
+    <text x="50" y="281" font-size="13" fill="#1e293b">• OpenAI GPT</text>
+    <text x="50" y="300" font-size="13" fill="#1e293b">• Anthropic Claude</text>
+    <text x="50" y="319" font-size="13" fill="#1e293b">• Cohere, Mistral</text>
+    <text x="50" y="338" font-size="13" fill="#1e293b">• Cloud hosts: Vertex AI,</text>
+    <text x="62" y="356" font-size="13" fill="#1e293b">Azure OpenAI, AWS Bedrock</text>
+    <text x="50" y="388" font-size="13" font-weight="700" fill="#15803d">+ Fastest start, no infrastructure</text>
+    <text x="50" y="407" font-size="13" font-weight="700" fill="#15803d">+ Frontier-level quality</text>
+    <text x="50" y="434" font-size="13" font-weight="700" fill="#b91c1c">− Data leaves your network</text>
+    <text x="50" y="453" font-size="13" font-weight="700" fill="#b91c1c">− Per-call cost and rate limits</text>
+    <text x="50" y="472" font-size="13" font-weight="700" fill="#b91c1c">− Vendor can change or retire it</text>
+  </g>
+
+  <!-- Card 2: Download -->
+  <g>
+    <rect x="320" y="100" width="270" height="470" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <rect x="320" y="100" width="270" height="64" rx="14" fill="#16a34a"/>
+    <rect x="320" y="140" width="270" height="24" fill="#16a34a"/>
+    <text x="340" y="128" font-size="13" font-weight="700" fill="#dcfce7">OPTION 2</text>
+    <text x="340" y="152" font-size="19" font-weight="700" fill="#ffffff">Download a model</text>
+    <text x="340" y="192" font-size="13" fill="#1e293b">Run pretrained weights as-is</text>
+    <text x="340" y="210" font-size="13" fill="#1e293b">on your own hardware.</text>
+    <text x="340" y="242" font-size="13" font-weight="700" fill="#14532d">Where to find them</text>
+    <text x="340" y="262" font-size="13" fill="#1e293b">• Hugging Face Hub</text>
+    <text x="340" y="281" font-size="13" fill="#1e293b">• Kaggle Models</text>
+    <text x="340" y="300" font-size="13" fill="#1e293b">• PyTorch Hub, TensorFlow Hub</text>
+    <text x="340" y="319" font-size="13" fill="#1e293b">• ONNX Model Zoo</text>
+    <text x="340" y="338" font-size="13" fill="#1e293b">• Ollama, NVIDIA NGC</text>
+    <text x="340" y="357" font-size="13" fill="#1e293b">• Paper repos on GitHub</text>
+    <text x="340" y="388" font-size="13" font-weight="700" fill="#15803d">+ Data stays in-house</text>
+    <text x="340" y="407" font-size="13" font-weight="700" fill="#15803d">+ No per-call fees, no lock-in</text>
+    <text x="340" y="434" font-size="13" font-weight="700" fill="#b91c1c">− You host and serve it</text>
+    <text x="340" y="453" font-size="13" font-weight="700" fill="#b91c1c">− Check license and model card</text>
+    <text x="340" y="472" font-size="13" font-weight="700" fill="#b91c1c">− May not fit your task exactly</text>
+  </g>
+
+  <!-- Card 3: Adapt -->
+  <g>
+    <rect x="610" y="100" width="270" height="470" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <rect x="610" y="100" width="270" height="64" rx="14" fill="#d97706"/>
+    <rect x="610" y="140" width="270" height="24" fill="#d97706"/>
+    <text x="630" y="128" font-size="13" font-weight="700" fill="#fef3c7">OPTION 3</text>
+    <text x="630" y="152" font-size="19" font-weight="700" fill="#ffffff">Adapt a model</text>
+    <text x="630" y="192" font-size="13" fill="#1e293b">Start from a pretrained model</text>
+    <text x="630" y="210" font-size="13" fill="#1e293b">(same sources as 1 and 2).</text>
+    <text x="630" y="242" font-size="13" font-weight="700" fill="#78350f">Techniques, light to heavy</text>
+    <text x="630" y="262" font-size="13" fill="#1e293b">• Prompting, few-shot examples</text>
+    <text x="630" y="281" font-size="13" fill="#1e293b">• Retrieval (RAG)</text>
+    <text x="630" y="300" font-size="13" fill="#1e293b">• Frozen embeddings + new head</text>
+    <text x="630" y="319" font-size="13" fill="#1e293b">• PEFT: LoRA, QLoRA, adapters,</text>
+    <text x="642" y="337" font-size="13" fill="#1e293b">prompt/prefix tuning</text>
+    <text x="630" y="356" font-size="13" fill="#1e293b">• Full fine-tuning</text>
+    <text x="630" y="375" font-size="13" fill="#1e293b">• Instruction tuning, RLHF/DPO</text>
+    <text x="630" y="394" font-size="13" fill="#1e293b">• Distillation, quantization</text>
+    <text x="630" y="426" font-size="13" font-weight="700" fill="#15803d">+ Fits your task and data</text>
+    <text x="630" y="445" font-size="13" font-weight="700" fill="#15803d">+ Needs far less data than scratch</text>
+    <text x="630" y="472" font-size="13" font-weight="700" fill="#b91c1c">− Needs labeled data and GPUs</text>
+    <text x="630" y="491" font-size="13" font-weight="700" fill="#b91c1c">− You own training and eval</text>
+  </g>
+
+  <!-- Card 4: Scratch -->
+  <g>
+    <rect x="900" y="100" width="270" height="470" rx="14" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
+    <rect x="900" y="100" width="270" height="64" rx="14" fill="#9333ea"/>
+    <rect x="900" y="140" width="270" height="24" fill="#9333ea"/>
+    <text x="920" y="128" font-size="13" font-weight="700" fill="#f3e8ff">OPTION 4</text>
+    <text x="920" y="152" font-size="19" font-weight="700" fill="#ffffff">Build from scratch</text>
+    <text x="920" y="192" font-size="13" fill="#1e293b">Choose an architecture and train</text>
+    <text x="920" y="210" font-size="13" fill="#1e293b">it only on your own data.</text>
+    <text x="920" y="242" font-size="13" font-weight="700" fill="#581c87">Ranges from</text>
+    <text x="920" y="262" font-size="13" fill="#1e293b">• Classical ML: logistic</text>
+    <text x="932" y="280" font-size="13" fill="#1e293b">regression, trees, SVMs</text>
+    <text x="920" y="299" font-size="13" fill="#1e293b">• Custom neural networks</text>
+    <text x="920" y="318" font-size="13" fill="#1e293b">• Pretraining a foundation model</text>
+    <text x="920" y="342" font-size="13" font-weight="700" fill="#581c87">Tools</text>
+    <text x="920" y="362" font-size="13" fill="#1e293b">• scikit-learn, XGBoost</text>
+    <text x="920" y="381" font-size="13" fill="#1e293b">• PyTorch, TensorFlow/Keras, JAX</text>
+    <text x="920" y="413" font-size="13" font-weight="700" fill="#15803d">+ Full control of every choice</text>
+    <text x="920" y="432" font-size="13" font-weight="700" fill="#15803d">+ Best for unusual data</text>
+    <text x="920" y="459" font-size="13" font-weight="700" fill="#b91c1c">− Most data, compute, expertise</text>
+    <text x="920" y="478" font-size="13" font-weight="700" fill="#b91c1c">− Deep nets: rarely worth it</text>
+    <text x="932" y="496" font-size="13" font-weight="700" fill="#b91c1c">unless no pretrained fit exists</text>
+  </g>
+
+  <!-- "In this demo" tags -->
+  <g font-size="12" font-weight="700">
+    <rect x="50" y="526" width="230" height="28" rx="14" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="165" y="545" text-anchor="middle" fill="#64748b">In this demo: not used</text>
+    <rect x="340" y="526" width="230" height="28" rx="14" fill="#ffffff" stroke="#86efac"/>
+    <text x="455" y="545" text-anchor="middle" fill="#14532d">In this demo: B (zero-shot NLI)</text>
+    <rect x="630" y="526" width="230" height="28" rx="14" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="745" y="545" text-anchor="middle" fill="#78350f">In this demo: C and D</text>
+    <rect x="920" y="526" width="230" height="28" rx="14" fill="#ffffff" stroke="#d8b4fe"/>
+    <text x="1035" y="545" text-anchor="middle" fill="#581c87">In this demo: A (TF-IDF + LR)</text>
+  </g>
+
+  <!-- Bottom spectrum arrows -->
+  <line x1="40" y1="612" x2="1160" y2="612" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="40" y="600" font-size="14" font-weight="700" fill="#334155">Less effort · faster start</text>
+  <text x="1160" y="600" text-anchor="end" font-size="14" font-weight="700" fill="#334155">More effort · more control</text>
+  <text x="600" y="642" text-anchor="middle" font-size="14" fill="#334155">Moving right increases: data needed · compute · ML expertise · time to first result · control over data, behavior and cost</text>
+  <text x="600" y="672" text-anchor="middle" font-size="14" font-style="italic" fill="#475569">Whichever you pick, the evaluation is the same: one test set, one metric, your constraints.</text>
+</svg>

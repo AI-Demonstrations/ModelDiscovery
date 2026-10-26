@@ -2,6 +2,12 @@
 
 Oct 11, 2026 · @Johnny
 
+![Four ways to get a model: call a hosted API, download a pretrained model, adapt a pretrained model, or build from scratch](images/model-sourcing-options.svg)
+
+*The four ways to get a model, from least to most effort. This walkthrough's candidates cover options 2 to 4. Option 1, a hosted API, is the obvious fifth choice to raise in class.*
+
+**Further reading:** [10 Hugging Face Models Worth Knowing in 2026](https://www.kdnuggets.com/10-hugging-face-models-worth-knowing-in-2026) (KDnuggets), a quick survey of models you can download or adapt (options 2 and 3).
+
 ## How to use this companion
 
 Read this beside the notebook, one section at a time. Each section here matches a numbered section there, and explains what the cells do, why they are written that way, and what to say about them in class.
