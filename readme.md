@@ -1,4 +1,4 @@
-# Instructor's Companion: Model Selection Walkthrough
+# Guide for Model Selection Walkthrough
 
 Oct 11, 2026 · @Johnny
 
@@ -15,8 +15,8 @@ Oct 11, 2026 · @Johnny
 Read this beside the notebook, one section at a time. Each section here matches a numbered section there, and explains what the cells do, why they are written that way, and what to say about them in class.
 
 - **First pass (about an hour):** read The big picture, then skim each section's opening paragraph. That alone lets you narrate the demo.
-- **Second pass:** work through Section 2.4 (the evaluation harness) slowly, with the notebook open. It holds most of the ideas students will question.
-- **Before class:** do three or four of the Experiments to try, then read Questions students will ask.
+- **Second pass:** work through Section 2.4 (the evaluation harness) slowly, with the notebook open. It holds most of the ideas questioned.
+- **Before class:** do three or four of the Experiments to try.
 
 Conventions: `code` means a name you will see in the notebook. *Say in class* marks a sentence worth saying out loud. The notebook's own SITE STOP, KEY IDEAS and ASK THE ROOM cells are your lecture script; this companion is the explanation behind them.
 
@@ -32,7 +32,7 @@ The story runs in three acts, and each act hands something to the next:
 
 &#91;embedded content: the three acts of the walkthrough · with the drift loop\]
 
-The dashed loop is the part students forget: monitoring is what tells you the original framing has stopped being true.
+The dashed loop is often forgotten : monitoring is what tells you the original framing has stopped being true.
 
 ### Why these four candidates
 
@@ -190,7 +190,7 @@ This automates the six-point model card check. For one model ID it:
 3. Downloads the model card text with `ModelCard.load()` and checks for key phrases: intended use, training data, evaluation, limitations.
 4. Records the license from the card's metadata and the `sha`, the exact commit reviewed.
 
-Be honest with students that keyword checks only triage: they catch empty or thin cards fast, but a person still has to read the card. The `sha` matters because a model repo can change after you review it; pinning that commit later guarantees you ship what you reviewed.
+Keyword checks only triage: they catch empty or thin cards fast, but a person still has to read the card. The `sha` matters because a model repo can change after you review it; pinning that commit later guarantees you ship what you reviewed.
 
 ### The MTEB leaderboard (Site stop 5)
 
@@ -342,7 +342,7 @@ The cell builds a `README.md` from the actual results and saves it next to the m
 - `api.upload_folder()` uploads the model folder as one commit and returns its `oid`, the commit hash.
 - `REVISION` stores that hash. From here on, everything loads that exact commit.
 
-Private repos are visible only to you while logged in. Students need to be added, or you change visibility in the repo's settings.
+Private repos are visible only to you while logged in. Others need to be added, or you change visibility in the repo's settings.
 
 ### Step 3: loading safely, and the pickle demo
 
@@ -374,7 +374,7 @@ The resulting `route()` function sends confident predictions to their queue and 
 
 The out-of-scope messages (weather, mortgages, Spanish, gibberish) show what a closed label set does with input it was never meant for. Some will route confidently to a wrong queue: the scores are not well calibrated, so a high score does not guarantee the message is in scope. The threshold catches many such messages, not all. *Say in class:* the fix for "none of the above" is to train an out-of-scope class, not a cleverer threshold.
 
-The optional Gradio cell puts `route()` behind a small web page on port 7860 so students can try their own messages.
+The optional Gradio cell puts `route()` behind a small web page on port 7860 so you can try their own messages.
 
 ### Step 6: drift
 
@@ -386,7 +386,7 @@ The cell builds a fake "next week" from the test set: card-related messages trip
 
 `TRIGGERS` holds limits agreed before launch; crossing one prints ALERT. *Say in class:* decide what will make you act before the incident, while nobody is under pressure.
 
-## Questions students will ask
+## Questions
 
 These are the questions a sharp master's class is likely to raise, with short answers you can give and extend.
 
