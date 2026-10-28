@@ -1,0 +1,63 @@
+size,quant,file_mb,params_m,bits_per_weight,ram_mb,load_s,perplexity,macro_f1,ci95_low,ci95_high,accuracy,p95_ms,gen_tok_per_s,sample_reply,n_eval
+0.5B,q2_k,395.9,630.2,5.27,472.7,0.88,26.796,0.4865,0.4204,0.5484,0.52,1027.8,50.7,"If you were charged twice for the same coffee this morning, it's important to understand the situation and take appropriate action. Here are some steps you can follow:
+
+1. Check the coffee machine: Make sure the coffee machine is functioning properly and that the coffee is being dispensed correctly. If the coffee machine is malfunctioning, it may be causing the charges to be repeated.
+
+2. Check the coffee machine settings: Make sure the coffee machine is set to the correct temperature and grind",150
+0.5B,q3_k_m,412.0,630.2,5.48,406.4,0.95,26.347,0.3665,0.3096,0.4215,0.4267,468.7,51.4,"If you were charged twice for the same coffee this morning, it's likely that the coffee was not the same on the second occasion. It's possible that the coffee was contaminated, the machine was malfunctioning, or there was a problem with the coffee itself. In either case, it's best to contact the coffee shop or the coffee company to resolve the issue.",150
+0.5B,q4_k_m,468.6,630.2,6.24,434.9,0.8,25.466,0.3736,0.3131,0.4324,0.4267,510.4,52.9,"If you were charged twice for the same coffee this morning, it's important to understand the situation and take appropriate action. Here are some steps you can consider:
+
+1. **Check the Coffee Order**: Ensure that you have the correct coffee order. If you were charged twice, it's possible that the coffee was not delivered or that the coffee was not properly prepared.
+
+2. **Contact the Coffee Shop**: Reach out to the coffee shop you were charged for. You can call them",150
+0.5B,q5_k_m,498.0,630.2,6.63,492.3,0.84,25.725,0.3467,0.2823,0.4009,0.4,636.2,45.6,"I'm sorry to hear that you've been charged twice for the same coffee this morning. It's important to address this issue promptly to avoid any potential legal or financial consequences. Here are some steps you can take:
+
+1. **Check Your Receipts**: Review your receipt to see if there are any discrepancies or if the charges were made by someone else. This can help you determine if there was an error in the transaction.
+
+2. **Contact the Coffee Shop**: Reach out to",150
+0.5B,q6_k,620.2,630.2,8.26,614.6,0.89,25.787,0.3626,0.2968,0.4172,0.4267,555.5,42.7,"If you were charged twice for the same coffee this morning, it's important to understand the context and the rules of your workplace or company. Here are some steps you can take:
+
+1. **Check the Policy**: Review the company's policies on compensation and any specific rules regarding the frequency of coffee purchases. This will help you understand if there are any exceptions or if you are in violation of any rules.
+
+2. **Contact HR**: Reach out to your human resources department or the",150
+0.5B,q8_0,644.4,630.2,8.58,638.7,0.88,25.659,0.3625,0.2999,0.4179,0.4267,655.3,42.2,"If you were charged twice for the same coffee this morning, it's important to understand the context and the rules of your workplace or company. Here are some steps you can take:
+
+1. **Check the Policy**: Review the company's policies on compensation and any specific rules regarding repeated charges. This will help you understand if there are any exceptions or if you are in violation of any rules.
+
+2. **Contact HR**: Reach out to your human resources department or the relevant department of",150
+0.5B,fp16,1207.8,630.2,16.08,1202.1,1.16,25.499,0.351,0.2837,0.41,0.4133,609.1,24.3,"If you were charged twice for the same coffee this morning, it's important to understand the context and the rules of your workplace or company. Here are some steps you can take:
+
+1. **Check the Record**: Review your company's policies and procedures. Look for any specific rules or guidelines that might explain why you were charged twice.
+
+2. **Contact HR**: Reach out to your human resources department. They can provide you with the necessary information and help you understand the situation.",150
+1.5B,q2_k,718.0,1777.1,3.39,706.4,0.93,28.3,0.4217,0.3496,0.4817,0.4733,1120.1,23.5,"If you were charged twice for the same coffee this morning, it is likely that the issue is a misunderstanding or a mistake. Here are the steps you can take:
+
+1. Check the receipt: If you have a receipt, double-check it to ensure there are no errors.
+2. Contact the coffee shop: Reach out to the coffee shop to discuss the issue. They may be able to correct the mistake or offer a refund.
+3. Contact the coffee shop: If you have",150
+1.5B,q3_k_m,881.6,1777.1,4.16,876.0,1.21,20.106,0.7422,0.6749,0.793,0.7733,998.1,25.1,"If you were charged twice for the same coffee this morning, you should first check if there is a mistake in the billing or if there is a mistake in your own account. If you find that there is indeed a mistake, you should contact the customer service of the coffee shop or the company that provided the coffee to correct the mistake. If you find that there is no mistake, you should contact the customer service of the coffee shop or the company that provided the coffee to ask for",150
+1.5B,q4_k_m,1065.6,1777.1,5.03,1059.9,1.64,18.498,0.811,0.7403,0.8647,0.82,1084.3,19.6,"If you were charged twice for the same coffee, it's important to address this issue as soon as possible. Here are some steps you can take:
+
+1. **Contact the Coffee Shop**: Reach out to the coffee shop where you were charged. Explain the situation and ask them to resolve the issue. If they are unable to resolve it, you may need to escalate the matter.
+
+2. **Keep Records**: Make sure you have a record of the charges, including the dates,",150
+1.5B,q5_k_m,1225.9,1777.1,5.79,1220.3,0.96,18.569,0.7803,0.7147,0.8292,0.8067,1237.2,18.4,"If you were charged twice for the same coffee, it's important to address this issue promptly to avoid any potential financial or reputational damage. Here are some steps you can take:
+
+1. **Contact the Coffee Shop**: Reach out to the coffee shop where you were charged twice. Explain the situation clearly and politely. Be prepared to provide details such as the date, time, and exact amount of the charges.
+
+2. **Keep Records**: Make sure you have all the receipts and",150
+1.5B,q6_k,1396.3,1777.1,6.59,1390.7,1.02,18.347,0.802,0.7384,0.8545,0.82,2187.8,14.9,"If you were charged twice for the same coffee, it's important to address this issue as soon as possible to ensure you receive the correct amount of coffee. Here are some steps you can take:
+
+1. **Contact the Coffee Shop**: Reach out to the coffee shop where you were charged twice. Explain the situation clearly and politely. Most coffee shops have a policy on refunds for such errors.
+
+2. **Keep Records**: If you have receipts or any other records of your purchases,",150
+1.5B,q8_0,1806.8,1777.1,8.53,1801.1,1.2,18.003,0.8015,0.7367,0.8521,0.82,4135.1,12.9,"If you were charged twice for the same coffee, it's important to take action to resolve the issue. Here are some steps you can follow:
+
+1. **Contact the Coffee Shop**: Reach out to the coffee shop where you were charged. Explain the situation clearly and politely. Be prepared to provide details such as the date, time, and the names of the staff members involved.
+
+2. **Keep Records**: Make sure you have a record of the charges, including the date,",150
+1.5B,fp16,3395.5,1777.1,16.03,3389.8,1.76,17.981,0.8015,0.7367,0.8521,0.82,2268.5,8.1,"If you were charged twice for the same coffee, it's important to take action to resolve the issue. Here are some steps you can follow:
+
+1. **Contact the Coffee Shop**: Reach out to the coffee shop where you were charged. Explain the situation clearly and politely. Be prepared to provide details such as the date, time, and the amount of the charge.
+
+2. **Keep Records**: Make sure you have a record of the charges, including the date, time,",150

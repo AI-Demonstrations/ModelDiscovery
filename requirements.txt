@@ -19,3 +19,6 @@ matplotlib
 jupyterlab
 ipywidgets
 gradio>=5.0        # optional: only for the live web UI cell
+psutil
+# optional: only for quantization_family_demo.py (prebuilt CPU wheel; no compiler needed)
+#   pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu

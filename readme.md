@@ -8,6 +8,8 @@ Oct 11, 2026 · @Johnny
 
 **Further reading:** [10 Hugging Face Models Worth Knowing in 2026](https://www.kdnuggets.com/10-hugging-face-models-worth-knowing-in-2026) (KDnuggets), a quick survey of models you can download or adapt (options 2 and 3).
 
+**Follow-on demo:** [Model Families and Quantization](QuantizationGuide.md) (`quantization_family_demo.py`) covers the next two choices after picking a model: which size in its family, and which quantization level.
+
 ## How to use this companion
 
 Read this beside the notebook, one section at a time. Each section here matches a numbered section there, and explains what the cells do, why they are written that way, and what to say about them in class.
