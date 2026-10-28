@@ -1,7 +1,5 @@
 # Guide for Model Selection Walkthrough
 
-Oct 11, 2026 · @Johnny
-
 ![Four ways to get a model: call a hosted API, download a pretrained model, adapt a pretrained model, or build from scratch](images/model-sourcing-options.svg)
 
 *The four ways to get a model, from least to most effort. This walkthrough's candidates cover options 2 to 4. Option 1, a hosted API, is the obvious fifth choice to raise in class.*
