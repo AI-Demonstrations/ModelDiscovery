@@ -8,17 +8,24 @@
 
 **Follow-on demo:** [Model Families and Quantization](QuantizationGuide.md) (`quantization_family_demo.py`) covers the next two choices after picking a model: which size in its family, and which quantization level.
 
-## How to use this companion
-
-Read this beside the notebook, one section at a time. Each section here matches a numbered section there, and explains what the cells do, why they are written that way, and what to say about them in class.
-
-- **First pass (about an hour):** read The big picture, then skim each section's opening paragraph. That alone lets you narrate the demo.
-- **Second pass:** work through Section 2.4 (the evaluation harness) slowly, with the notebook open. It holds most of the ideas questioned.
-- **Before class:** do three or four of the Experiments to try.
-
-Conventions: `code` means a name you will see in the notebook. *Say in class* marks a sentence worth saying out loud. The notebook's own SITE STOP, KEY IDEAS and ASK THE ROOM cells are your lecture script; this companion is the explanation behind them.
 
 ## The big picture
+
+### The business problem
+
+A bank receives a steady stream of written messages from its customers through its app and website: "My new card still hasn't arrived," "I think my card was stolen," "Why was I charged a fee at the cash machine?" Every message has to reach the team that can act on it: card delivery, fraud and security, payments, or account closures. Today a person reads and forwards each one. That is slow and costly, and a message sent to the wrong team waits even longer for an answer. For a lost or stolen card, that delay is also a security risk.
+
+The bank wants a model that reads each message and routes it automatically to one of 77 intents, the categories in the banking77 dataset. The model has to work within the bank's real limits:
+
+- **Every intent matters,** including the rare ones. A model that is good on common questions but misses "lost or stolen card" is not acceptable. That is why the walkthrough uses macro-F1, which weights every intent equally.
+- **Customer data stays inside the bank.** Messages contain account details, so the model must run on the bank's own servers. A hosted API is out.
+- **The customer is waiting,** so routing must be fast on the bank's ordinary CPU servers.
+- **The license must allow commercial use,** since the bank is a business.
+- **The model may say "not sure".** Messages it cannot route confidently go to a person, as they do today. Automation only has to handle the clear cases well.
+
+These limits become the written requirements and `CONSTRAINTS` used throughout the notebook. The demo's real question is: *which model routes these messages best, within these limits?*
+
+### The argument of the demo
 
 The whole demo argues one thing: choosing a model is a decision made under constraints, and only your own evaluation can make it. Leaderboards, download counts and model cards narrow the list; they never pick the winner.
 
