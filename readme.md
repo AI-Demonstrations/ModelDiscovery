@@ -2,7 +2,7 @@
 
 ![Four ways to get a model: call a hosted API, download a pretrained model, adapt a pretrained model, or build from scratch](images/model-sourcing-options.svg)
 
-*The four ways to get a model, from least to most effort. This walkthrough's candidates cover options 2 to 4. Option 1, a hosted API, is the obvious fifth choice to raise in class.*
+*The four ways to get a model, from least to most effort. This walkthrough's candidates cover options 2 to 4. Option 1, a hosted API, is the obvious fifth choice.*
 
 **Further reading:** [10 Hugging Face Models Worth Knowing in 2026](https://www.kdnuggets.com/10-hugging-face-models-worth-knowing-in-2026) (KDnuggets), a quick survey of models you can download or adapt (options 2 and 3).
 
@@ -50,7 +50,7 @@ They are one rung each on the adaptation ladder, so the comparison shows what ea
 | C · MiniLM embeddings + logistic regression | A small frozen encoder turns text into vectors; a linear model classifies them | Most of the benefit of pretraining for little cost |
 | D · Fine-tuned DistilBERT | Every weight of a small transformer updated on our labels | Usually the best quality, at the highest training and serving cost |
 
-*Say in class:* "We are not asking which model is best. We are asking which model is best for this job, under these constraints, and how we would know."
+**"We are not asking which model is best. We are asking which model is best for this job, under these constraints, and how we would know."
 
 ## The candidate models: names, links, and why
 
@@ -100,7 +100,7 @@ Requirements 1 to 3 are hard filters: fail one and the model is out. Requirement
 - **Larger open models, including MTEB leaders and open-weight LLMs:** likely to fail requirement 4 on CPU. They're a good extension exercise: add one as candidate F and let the harness decide.
 - **BERT-base and similar:** a fair alternative to DistilBERT, but about 110M parameters and slower, for usually small gains on short messages.
 
-*Say in class:* "These four weren't picked because they're the best models on the Hub. They were picked because each one could plausibly meet our requirements, and each one tests a different amount of adaptation."
+** "These four weren't picked because they're the best models on the Hub. They were picked because each one could plausibly meet our requirements, and each one tests a different amount of adaptation."
 
 ## Section 0 · Setup
 
@@ -136,7 +136,7 @@ This section turns a vague business need into something you can measure: the dat
 
 - **PolyAI/banking77** is the original release. Its viewer is broken because it relies on a loading script, and current `datasets` releases no longer run those. Use it as a live example of how datasets rot.
 - **mteb/banking77** is a re-upload in parquet format, made for the MTEB benchmark. Same 13,083 messages, and its viewer and SQL console work.
-- **The license teaching moment:** the original says CC-BY-4.0, the mirror says MIT. Only the original author can set the license, so the CC-BY-4.0 on the original is the one that applies. *Say in class:* trust the license at the source, not on a copy.
+- **The license teaching moment:** the original says CC-BY-4.0, the mirror says MIT. Only the original author can set the license, so the CC-BY-4.0 on the original is the one that applies. ** trust the license at the source, not on a copy.
 
 ### `load_banking77()`
 
@@ -148,7 +148,7 @@ After loading, `LABELS` is the 77 intent names in alphabetical order, and `label
 
 - **Train / validation:** 10% of the training data is held back as a validation set, *stratified* so every intent keeps its proportion. Validation is for choices like the confidence threshold later.
 - **Test:** the official 3,080-message test set, never used to make any choice.
-- **Fingerprint:** `TEST_FINGERPRINT` is a short hash of the test set's text. If anyone evaluates on a different or modified test set, the fingerprint changes. It is printed into every result and into the model card. *Say in class:* this is how you prove your numbers came from the test set you claim.
+- **Fingerprint:** `TEST_FINGERPRINT` is a short hash of the test set's text. If anyone evaluates on a different or modified test set, the fingerprint changes. It is printed into every result and into the model card. ** this is how you prove your numbers came from the test set you claim.
 
 ### The class balance chart
 
@@ -162,7 +162,7 @@ Three rules, each a number or a yes/no:
 - `allowed_licenses`: licenses that permit commercial use.
 - `data_may_leave_environment`: False, which rules out hosted APIs before any testing.
 
-Have the class set the latency number out loud before results appear. If they set it afterwards, they will unconsciously set it to make their favorite model pass.
+Say various latency numbers out loud before results appear. Might unconsciously set it to make their favorite model pass.
 
 ## Sections 2.1 to 2.3 · Search, review, leaderboards
 
@@ -181,6 +181,10 @@ A thin wrapper around `HfApi().list_models()`, the same search the Hub's website
 Each model comes back as a `ModelInfo` object; the function pulls out a few fields into a table. Parameter counts come from the model's safetensors metadata, so models stored only in older formats show a blank there.
 
 *Teaching point:* popularity is not fitness. A model with millions of downloads may be trained for sentiment, in another language, or on data you can't use.
+
+### The Hub's task list
+
+The Hub's **Tasks** filter lists 52 tasks, and each one is a value you can pass as `pipeline_tag=`. [tasksdefinitions.md](tasksdefinitions.md) gives every task with a definition, a use case and a linked example model.
 
 ### The community banking77 models
 
@@ -227,7 +231,7 @@ For each intent, F1 balances two questions. *Precision:* when the model says "ca
 F_1 = \frac{2 \cdot \text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}} \qquad \text{macro-}F_1 = \frac{1}{77}\sum_{k=1}^{77} F_{1,k}
 ```
 
-**Macro** means compute F1 for each of the 77 intents separately, then take the plain average. Every intent counts equally, however rare. The alternative, *micro* averaging, pools all messages, so common intents dominate and a model can ignore rare ones and still score well. *Say in class:* we chose macro because a misrouted "lost or stolen card" message matters as much as a common one.
+**Macro** means compute F1 for each of the 77 intents separately, then take the plain average. Every intent counts equally, however rare. The alternative, *micro* averaging, pools all messages, so common intents dominate and a model can ignore rare ones and still score well. ** chose macro because a misrouted "lost or stolen card" message matters as much as a common one.
 
 ### `bootstrap_ci()`: how sure are we?
 
@@ -289,7 +293,7 @@ It reached 0.887 macro-F1 on the full data in about 20 seconds of CPU training. 
 - `Trainer` runs the loop: forward pass, loss, backpropagation, weight update. With two GPUs it splits each batch across both.
 - `trainer.save_model()` writes `model.safetensors` plus the config and tokenizer to `artifacts/distilbert-banking77/`. The next cell wraps it in a `pipeline` for prediction.
 
-*Say in class:* every rung up the ladder buys quality with more data, compute, and things that can go wrong.
+** every rung up the ladder buys quality with more data, compute, and things that can go wrong.
 
 ## Section 2.6 · Results and the decision matrix
 
@@ -304,7 +308,7 @@ The results table shows what each model achieved; the matrix turns those numbers
 
 ### Step 1 of the matrix: hard filters
 
-Each candidate is checked against the constraints. Failing any one removes it, with the reason in `filtered_by`. A row **E · Hosted LLM API** is added without running anything: it fails the data-control rule, which is the point. *Say in class:* a hard constraint is a filter, not a weight. No amount of accuracy buys back a broken rule.
+Each candidate is checked against the constraints. Failing any one removes it, with the reason in `filtered_by`. A row **E · Hosted LLM API** is added without running anything: it fails the data-control rule, which is the point. ** a hard constraint is a filter, not a weight. No amount of accuracy buys back a broken rule.**
 
 Licenses come from `REVIEWS` (Section 2.2), except A, which is our own scikit-learn model.
 
@@ -339,7 +343,7 @@ This section makes the chosen model something other people can trust and operate
 
 ### Step 1: the model card
 
-The cell builds a `README.md` from the actual results and saves it next to the model. The block between the `---` lines is YAML metadata that the Hub reads for its sidebar (license, base model, dataset, task). The rest is the card itself: intended use, out-of-scope uses, training data, evaluation with the test fingerprint, the decision record, limitations, and how to load it. *Say in class:* we just did to our own model what we did to everyone else's in Section 2.2.
+The cell builds a `README.md` from the actual results and saves it next to the model. The block between the `---` lines is YAML metadata that the Hub reads for its sidebar (license, base model, dataset, task). The rest is the card itself: intended use, out-of-scope uses, training data, evaluation with the test fingerprint, the decision record, limitations, and how to load it. ** we just did to our own model what we did to everyone else's in Section 2.2.**
 
 ### Step 2: publishing and pinning
 
@@ -377,7 +381,7 @@ The resulting `route()` function sends confident predictions to their queue and 
 
 ### Step 5: breaking it
 
-The out-of-scope messages (weather, mortgages, Spanish, gibberish) show what a closed label set does with input it was never meant for. Some will route confidently to a wrong queue: the scores are not well calibrated, so a high score does not guarantee the message is in scope. The threshold catches many such messages, not all. *Say in class:* the fix for "none of the above" is to train an out-of-scope class, not a cleverer threshold.
+The out-of-scope messages (weather, mortgages, Spanish, gibberish) show what a closed label set does with input it was never meant for. Some will route confidently to a wrong queue: the scores are not well calibrated, so a high score does not guarantee the message is in scope. The threshold catches many such messages, not all. ** the fix for "none of the above" is to train an out-of-scope class, not a cleverer threshold.**
 
 The optional Gradio cell puts `route()` behind a small web page on port 7860 so you can try their own messages.
 
